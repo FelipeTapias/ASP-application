@@ -1,0 +1,35 @@
+﻿@model List<Ventum>
+
+
+<h1>Ventas</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Cantidad
+			</th>
+			<th>
+				Fecha Venta
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var venta in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(m => venta.Cantidad)
+				</td>
+				<td>
+					@Html.DisplayFor(m => venta.FechaVenta)
+				</td>
+				<td>
+
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
